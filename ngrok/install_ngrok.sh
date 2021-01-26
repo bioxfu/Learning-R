@@ -43,5 +43,5 @@ nohup sudo ./ngrok_start.sh >/dev/null 2>&1 &
 # 添加配置文件ngrok.cfg:
 # server_addr: "ngrok.你的域名:4443"
 # trust_host_root_certs: false
-setsid ./ngrok -config=./ngrok.cfg -subdomain=rstudio 8787
+setsid ./ngrok -config=./ngrok.cfg start-all
 
